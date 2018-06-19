@@ -1,7 +1,9 @@
+## 個人情報
+
 import tweepy
 
 def auth():
-  
+
   # https://apps.twitter.com/ にアクセスし各種キーを取得する
   # " "内には取得した各種キーを代入する
   CK = "CONSUMER_KEY"
