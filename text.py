@@ -7,7 +7,7 @@ class Sashimi:
   def __init__(self, number):
 
     # 10連の時は10、そうじゃない時は1
-    # いずれはn回(1 <= n <= 10)に対応したい
+    # いずれはn連(1 <= n <= 10)に対応したい
     self.number = number
 
     self.normal = []
