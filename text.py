@@ -38,12 +38,19 @@ class Sashimi:
 
     if N == 343:
       text = random.choice(self.super_special)
-    elif N < 50:
+      self.super_special.remove(text)
+    elif N < 30:
       text = random.choice(self.rea)
-    elif N < 100:
+      self.rea.remove(text)
+    elif N < 60:
       text = random.choice(self.special)
+      self.special.remove(text)
     else:
-      text = random.choice(self.pre_text) + random.choice(self.normal)
+      p_text = random.choice(self.pre_text)
+      n_text = random.choice(self.normal)
+      self.pre_text.remove(p_text)
+      self.normal.remove(n_text)
+      text = p_text + n_text
     
     return text
 
